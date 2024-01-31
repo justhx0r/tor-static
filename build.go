@@ -27,7 +27,7 @@ var absCurrDir = getAbsCurrDir()
 var numJobs = fmt.Sprintf("-j%d", runtime.NumCPU())
 
 func main() {
-	flag.BoolVar(&verbose, "verbose", false, "Whether to show command output")
+	flag.BoolVar(&verbose, "verbose", true, "Whether to show command output")
 	flag.StringVar(&host, "host", "", "Host option, useful for cross-compilation")
 	flag.StringVar(&autopointPath, "autopoint-path", "/usr/local/opt/gettext/bin", "OSX: Directory that contains autopoint binary")
 	flag.Parse()
